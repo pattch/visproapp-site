@@ -1,0 +1,47 @@
+@font-face {
+    font-family: major;
+    src: url(/assets/font/major.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: inconsolata;
+    src: url(/assets/font/inconsolata/inconsolata.ttf) format("truetype");
+}
+
+.logo {
+  font-family: 'major', monospace;
+  font-size: 5em;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .coming-soon {
+    font-size: 20px;
+    margin-top:20px;
+    font-family: 'inconsolata', monospace;
+  }
+}
+
+.coming-soon {
+    font-family: sans-serif;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    // display: -webkit-flex;
+    // display: flex;
+    // -webkit-justify-content: space-around;
+    // justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    padding:10px 20%;
+    box-sizing: border-box;
+}
