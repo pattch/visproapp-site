@@ -8,6 +8,11 @@
     src: url(/assets/font/inconsolata/inconsolata.ttf) format("truetype");
 }
 
+
+* {
+  transition: all 0.5s ease-in-out;
+}
+
 .logo {
   font-family: 'major', monospace;
   font-size: 5em;
@@ -16,11 +21,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  backdrop-filter: invert(100%);
+  backdrop-filter: contrast(125%) brightness(70%) blur(5px);
   min-width: 50%;
-//   min-height: 50%;
+  min-height: 50%;
   padding: 10px;
   border-radius: 20px;
+
+  &:hover {
+    backdrop-filter: contrast(150%) brightness(80%) blur(2px);
+
+    p {
+        text-shadow: #fff 0 0 10px;
+    }
+  }
 
   color: #fff;
 
