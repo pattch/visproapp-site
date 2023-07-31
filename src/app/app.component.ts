@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'visproapp-site';
+  day = true;
+
+  toggle() {
+    this.day = !this.day;
+  }
 }
