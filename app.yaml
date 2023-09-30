@@ -1,7 +1,7 @@
 runtime: python39
 handlers:
-- url: /
+- url: /*
   static_files: visproapp-site/index.html
   upload: visproapp-site/index.html
-- url: /
+- url: /.*
   static_dir: visproapp-site
