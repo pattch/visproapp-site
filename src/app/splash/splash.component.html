@@ -1,1 +1,22 @@
-<p>splash works!</p>
+<div class="container"
+  [ngClass]="day ? 'day' : 'night'"
+>
+  <div class="logo" (click)="toggle()">
+    <div class="text-container">
+      <div class="logo-container">
+        <p>VIS</p>
+        <p>PRO</p>
+        <p>APP</p>
+        <!-- <p>Vis</p>
+        <p>Pro</p>
+        <p>App</p> -->
+        <div class="coming-soon">
+          Coming Soon
+        </div>
+      </div>
+    </div>
+    <div class="blurb">
+      Augmented Reality &middot; Virtual Reality &middot; App Development
+    </div>
+  </div>
+</div>

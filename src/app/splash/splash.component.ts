@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./splash.component.scss']
 })
 export class SplashComponent {
+  day = true;
 
+  toggle() {
+    this.day = !this.day;
+  }
 }

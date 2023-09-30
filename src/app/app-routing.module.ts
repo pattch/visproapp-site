@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AppComponent } from './app.component';
+import { SplashComponent } from './splash/splash.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent }
+  { path: '', component: SplashComponent }
 ];
 
 @NgModule({
