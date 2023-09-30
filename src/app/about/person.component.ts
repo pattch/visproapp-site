@@ -10,5 +10,13 @@ export class PersonComponent {
   @Input() name?: string;
   @Input() img?: string;
   @Input() title?: string;
+  @Input() email?: string;
 
+  constructMailto(): string {
+    if (!!this.email) {
+      return '';
+    }
+
+    return `mailto:${this.email}`;
+  }
 }
