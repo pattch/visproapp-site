@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'about-person',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./person.component.scss']
 })
 export class PersonComponent {
+
+  @Input() name?: string;
+  @Input() img?: string;
+  @Input() title?: string;
 
 }
