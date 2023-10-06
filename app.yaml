@@ -1,7 +1,32 @@
 runtime: python39
 handlers:
-- url: /*
+- url: /
   static_files: visproapp-site/index.html
   upload: visproapp-site/index.html
-- url: /.*
-  static_dir: visproapp-site
+
+#  Routing rules for resources, css, js, images etc. Any file with format filename.ext
+- url: /(.*\.(.+))$
+  static_files: visproapp-site/\1
+  upload: visproapp-site/(.*\.(.+))$
+
+#  Routing rule for Angular Routing
+- url: /(.*)
+  static_files: visproapp-site/index.html
+  upload: visproapp-site/index.html
+
+# Doesn't work on /about or on images
+# - url: /.*
+#   static_dir: visproapp-site
+
+# Doesn't work on images on /about
+# - url: /
+#   static_files: visproapp-site/index.html
+#   upload: visproapp-site/index.html
+
+# - url: /assets/img
+#   static_dir: visproapp-site/assets/img
+
+# # Catch-all rule, responsible from handling Angular application routes (deeplinks).
+# - url: /.*
+#   static_files: visproapp-site/index.html
+#   upload: visproapp-site/index.html
