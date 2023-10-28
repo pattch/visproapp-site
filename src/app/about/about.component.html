@@ -1,7 +1,25 @@
-<div class="container">
+<div class="container"
+    [ngClass]="day ? 'day' : 'night'"
+>
     <div class="content">
-        <h1>About</h1>
-
+        <div class="logo-wrapper">
+            <div class="logo" (click)="toggle()">
+                <div class="text-container">
+                <div class="logo-container">
+                    <p>VIS</p>
+                    <p>PRO</p>
+                    <p>APP</p>
+                    <div class="coming-soon">
+                    Coming Soon
+                    </div>
+                </div>
+                </div>
+                <div class="blurb">
+                Augmented Reality &middot; Virtual Reality &middot; App Development
+                </div>
+            </div>
+        </div>
+        <a id="about">About</a>
         <p>
             VisProApp is a cutting-edge technology company that develops machine learning and
             augmented reality products and games. We are in the early stages of development,
@@ -24,6 +42,9 @@
                 email="steve@visproapp.com"
             >
             </about-person>
+        </div>
+        <div class="bottom-spacer">
+            &nbsp;
         </div>
     </div>
 </div>

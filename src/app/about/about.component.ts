@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
+  day = true;
 
+  toggle() {
+    this.day = !this.day;
+  }
 }

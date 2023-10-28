@@ -5,8 +5,7 @@ import { SplashComponent } from './splash/splash.component';
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  { path: '', component: SplashComponent },
-  { path: 'about', component: AboutComponent },
+  { path: '**', component: AboutComponent },
 ];
 
 @NgModule({
