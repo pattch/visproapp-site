@@ -1,9 +1,10 @@
 .footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     text-align: center;
     width: 100%;
-    padding: 10px 20%;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'inconsolata', monospace;
     color: #fff;
@@ -11,5 +12,12 @@
 
     a {
         color: #faf;
+    }
+}
+
+
+@media (min-width: 550px) {
+    .footer {
+        padding: 10px 20%;
     }
 }
